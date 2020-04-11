@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nearest T-station</title>
+  </head>
+  <body>
+    <h1>Find nearest T-station</h1>
+    <form method="POST" name="mbta">
+      {% if error %}
+      <p style="color:red">could not find t-station.</p>
+      {% endif %}
+      <p>*Note that the app only works if you type in one-word places like "newton" or "wellesley".</p>
+      <p>
+        Please enter a place in Boston:
+      </p>
+      <p>
+        <input type="text" size="4" name="a" />
+      </p>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </body>
+</html>
